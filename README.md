@@ -1,4 +1,4 @@
-# CAXTON: The Collaboration Autonomous Extrusion Network
+# CAXTON: The Collaborative Autonomous Extrusion Network
 
 _Accompanying code to the publication "Generalisable 3D Printing Error Detection and Correction via Multi-Head Neural Networks"_
 
@@ -31,4 +31,10 @@ The command line arguments `-e` for number of epochs and `-s` for the seed can b
 After training the network is able to simulatneously predict the classification of the four parameters from a single input image with an average accuracy of 84.3%.
 
 ![media/network.jpg](media/confusion_matrices.jpg)
+
+The network successfully self-learns the important features in the images during training, and attention maps aid in focusses on the latest extrusion for making predicitions. Here we show example attention masks at each module for the given input images. Each module output consists of many channels of masks, only a single sample is shown here. The masks show regions the network is focussing on, such as the most recent extrusion as shown by the output of module 2.
+
+![media/maps.jpg](media/maps.jpg)
+
+
 
