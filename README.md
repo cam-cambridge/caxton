@@ -36,5 +36,6 @@ The network successfully self-learns the important features in the images during
 
 ![media/maps.jpg](media/maps.jpg)
 
+In the publication we provide a three step transfer learning process to achieve high accuracies in this problem. It should be noted that this step is not necessary and training can be completeled in an end-to-end fashion with a single training regime.
 
 
