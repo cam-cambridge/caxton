@@ -2,6 +2,8 @@
 
 _Accompanying code to the publication "Generalisable 3D Printing Error Detection and Correction via Multi-Head Neural Networks"_
 
+![media/network.jpg](media/network.jpg)
+
 ## Setup
 
 This repository allows you to easily train a multi-head residual attention neural network to classify the state of the four most important printing parameters: flow rate, lateral speed, Z offset, and hotend temperature from a single input image.
