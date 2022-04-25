@@ -55,7 +55,6 @@ data = ParametersDataModule(
     dataset_name=DATASET_NAME,
     mean=DATASET_MEAN,
     std=DATASET_STD,
-    load_saved=True,
 )
 
 trainer = pl.Trainer(
