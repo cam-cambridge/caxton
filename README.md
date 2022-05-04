@@ -8,7 +8,7 @@ _Accompanying code to the publication "Generalisable 3D Printing Error Detection
 
 This repository allows you to easily train a multi-head residual attention neural network to classify the state of the four most important printing parameters: flow rate, lateral speed, Z offset, and hotend temperature from a single input image.
 
-First create a Python 3 virtual environment and install the requirements. We use PyTorch (v1.7.1), Torchvision (v0.8.2), and CUDA (v11.3) in this work.
+First create a Python 3 virtual environment and install the requirements. We used PyTorch (v1.7.1), Torchvision (v0.8.2), and CUDA (v11.3) in this work. See the complete list of requirements in `requirements.txt`. 
 
 ```
 virtualenv -p python3 env
@@ -38,4 +38,4 @@ The network successfully self-learns the important features in the images during
 
 In the publication we provide a three step transfer learning process to achieve high accuracies in this problem. It should be noted that this step is not necessary and training can be completeled in an end-to-end fashion with a single training regime.
 
-
+The results for the models in this work were trained on a workstation running Ubuntu 18.04 equipped with an i9-9900K, 64GB RAM, 2x Nvidia Quadro RTX 5000 GPUs.
