@@ -8,7 +8,8 @@ from model.residual_attention_network import (
 )
 import pytorch_lightning as pl
 from datetime import datetime
-
+import pandas as pd
+import os
 
 class ParametersClassifier(pl.LightningModule):
     def __init__(
@@ -375,6 +376,7 @@ class ParametersClassifier(pl.LightningModule):
         preds = torch.cat(preds, dim=1)
         targets = torch.cat(targets, dim=1)
 
+        os.makedirs("test/", exist_ok=True)
         if self.test_overwrite_filename:
             torch.save(preds, "test/preds_test.pt")
             torch.save(targets, "test/targets_test.pt")

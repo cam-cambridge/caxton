@@ -59,7 +59,7 @@ class ParametersDataset(Dataset):
         image = Image.open(img_name)
         if self.pre_crop_transform:
             image = self.pre_crop_transform(image)
-            image = image.crop((left, top, right, bottom))
+        image = image.crop((left, top, right, bottom))
 
         if self.per_img_normalisation:
             tfms = transforms.Compose([transforms.Resize(224), transforms.ToTensor()])
