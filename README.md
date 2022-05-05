@@ -4,7 +4,7 @@ _Accompanying code to the publication "Generalisable 3D Printing Error Detection
 
 ![media/network.jpg](media/network.jpg)
 
-## Usage
+## Setup
 
 This repository allows you to easily train a multi-head residual attention neural network to classify the state of the four most important printing parameters: flow rate, lateral speed, Z offset, and hotend temperature from a single input image.
 
@@ -15,6 +15,8 @@ virtualenv -p python3 env
 source env/bin/activate
 pip install -r requirements.txt
 ```
+
+## Usage
 
 Inside the `src` directory are two sub-directories for our `data` and `model`. We use Pytorch-Lightning (v1.1.4) as a wrapper for both the dataset and datamodule classes and for our model.
 
