@@ -3,6 +3,8 @@ from datetime import datetime
 import numpy as np
 import torch
 from pytorch_lightning import seed_everything
+from torchvision import transforms
+
 
 DATE = datetime.now().strftime("%d%m%Y")
 
@@ -58,3 +60,14 @@ def make_dirs(path):
         os.makedirs(path)
     except:
         pass
+
+preprocess = transforms.Compose(
+    [
+        transforms.Resize(224),
+        transforms.ToTensor(),
+        transforms.Normalize(
+            [0.2915257, 0.27048784, 0.14393276],
+            [0.2915257, 0.27048784, 0.14393276],
+        )
+    ],
+)
