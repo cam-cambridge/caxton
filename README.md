@@ -39,3 +39,23 @@ The network successfully self-learns the important features in the images during
 In the publication we provide a three step transfer learning process to achieve high accuracies in this problem. It should be noted that this step is not necessary and training can be completeled in an end-to-end fashion with a single training regime.
 
 The results for the models in this work were trained on a workstation running Ubuntu 18.04 equipped with an i9-9900K, 64GB RAM, 2x Nvidia Quadro RTX 5000 GPUs.
+
+## Results from samples in repo
+
+```bash
+python src/samples.py
+
+********* CAXTON sample predictions *********
+Flow rate | Lateral speed | Z offset | Hotend
+*********************************************
+Input: sample1221.jpg -> Prediction: [1 2 2 1]
+Input: sample2122.jpg -> Prediction: [2 1 2 2]
+Input: sample1111.jpg -> Prediction: [1 1 1 1]
+Input: sample0022.jpg -> Prediction: [0 0 2 2]
+Input: sample2011.jpg -> Prediction: [2 0 1 1]
+Input: sample0021.jpg -> Prediction: [0 0 2 1]
+Input: sample2120.jpg -> Prediction: [2 1 2 0]
+Input: sample1011.jpg -> Prediction: [1 0 1 1]
+Completed 8 predictions in 0.56s
+```
+
