@@ -38,9 +38,13 @@ The network successfully self-learns the important features in the images during
 
 In the publication we provide a three step transfer learning process to achieve high accuracies in this problem. It should be noted that this step is not necessary and training can be completeled in an end-to-end fashion with a single training regime.
 
+## Results from samples in repo
+
 The results for the models in this work were trained on a workstation running Ubuntu 18.04 equipped with an i9-9900K, 64GB RAM, 2x Nvidia Quadro RTX 5000 GPUs.
 
-## Results from samples in repo
+In the top level `data` directory there are 8 cropped and full sample images of different parameter combinations for a range of prints. These are labelled `sampleABCD.jpg` where each of A, B, C, and D are numbers 0, 1, and 2 corresponding to low, good, and high levels respectively. Each letter is for the four different parameters: A - Flow rate, B - Lateral speed, C - Z offset, D - Hotend temp.
+
+You can test these samples with the provided script and should receive an output similar to the one below. On our system iterating through each sample individually takes around 0.07s per sample. Naturally if the batch size is increased the rate per sample can be greatly increased.
 
 ```bash
 python src/samples.py
@@ -58,4 +62,3 @@ Input: sample2120.jpg -> Prediction: [2 1 2 0]
 Input: sample1011.jpg -> Prediction: [1 0 1 1]
 Completed 8 predictions in 0.56s
 ```
-
