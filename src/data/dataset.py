@@ -48,7 +48,7 @@ class ParametersDataset(Dataset):
             idx = idx.tolist()
 
         img_name = os.path.join(self.root_dir, self.dataframe.img_path[idx])
-
+        
         dim = self.image_dim[0] / 2
 
         left = self.dataframe.nozzle_tip_x[idx] - dim
