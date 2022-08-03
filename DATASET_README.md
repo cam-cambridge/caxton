@@ -82,7 +82,7 @@ caxton_dataset/print0/image-3.jpg,2020-10-08T13:12:48-94,100,100,0.0,205.0,204.1
 ## Authors
 
 * **Douglas A. J. Brion** - *First Author* - [dajb3@cam.ac.uk](mailto:dajb3@cam.ac.uk)
-* **Sebastian W. Pattinson** - *Principle Investigator / Supervisor* - [swp29@cam.ac.uk](mailto:swp29@cam.ac.uk)
+* **Sebastian W. Pattinson** - *Principal Investigator / Supervisor* - [swp29@cam.ac.uk](mailto:swp29@cam.ac.uk)
 
 ## License
 
