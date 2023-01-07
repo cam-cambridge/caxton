@@ -109,7 +109,7 @@ This is reliable data as it consists of absolute temperature readings from the t
 
 ## Online links
 
-* [TODO](TODO) - Link to the Nature Communications Paper.
+* [https://www.nature.com/articles/s41467-022-31985-y](https://www.nature.com/articles/s41467-022-31985-y) - Link to the Nature Communications Paper.
 * [https://doi.org/10.17863/CAM.84082](https://doi.org/10.17863/CAM.84082) - Link to the data repository.
 * [https://github.com/cam-cambridge/caxton](https://github.com/cam-cambridge/caxton) - Link to the GitHub repository.
 
