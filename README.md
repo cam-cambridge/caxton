@@ -2,7 +2,7 @@
 
 [[Press Release](https://www.cam.ac.uk/research/news/algorithm-learns-to-correct-3d-printing-errors-for-different-parts-materials-and-systems)] [[Paper](https://www.nature.com/articles/s41467-022-31985-y)] [[Data](https://www.repository.cam.ac.uk/items/6d77cd6d-8569-4bf4-9d5f-311ad2a49ac8)] [[Code](https://github.com/cam-cambridge/caxton)] [[Blog](https://www.matta.ai/research/generalisable-3d-printing-error-detection-and-correction)]
 
-_Accompanying code to the publication: "Generalisable 3D Printing Error Detection and Correction via Multi-Head Neural Networks"_
+Accompanying code to the publication: _"Generalisable 3D Printing Error Detection and Correction via Multi-Head Neural Networks"_
 
 ![media/network.jpg](media/network.jpg)
 
